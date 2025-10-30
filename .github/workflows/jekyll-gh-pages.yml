@@ -29,7 +29,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
