@@ -231,8 +231,8 @@
     <!-- Part 1: TASK QUALITY OF GENDEXHAND -->
     <div class="content">
       <h3 class="title is-4 has-text-centered">TASK QUALITY OF GENDEXHAND</h3>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
+      <div class="columns is-variable is-6">
+        <div class="column is-half">
           <figure>
             <img src="static/images/refine.jpg" alt="Task refinement using MLLM" style="width: 100%; height: auto;" loading="lazy"/>
             <figcaption class="has-text-justified" style="margin-top: 0.5rem;">
@@ -240,10 +240,7 @@
             </figcaption>
           </figure>
         </div>
-      </div>
-
-      <div class="columns is-centered" style="margin-top: 1.5rem;">
-        <div class="column is-four-fifths">
+        <div class="column is-half">
           <div class="table-container">
             <table class="table is-striped is-hoverable is-fullwidth">
               <caption style="caption-side: top; text-align: center;">Results for text-based task description average cosine similarity.</caption>
@@ -296,17 +293,23 @@
     <!-- Part 2: EFFICIENCY OF POLICY LEARNING -->
     <div class="content" style="margin-top: 2rem;">
       <h3 class="title is-4 has-text-centered">EFFICIENCY OF POLICY LEARNING</h3>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
+      <div class="columns is-variable is-6">
+        <div class="column is-half">
           <figure>
             <img src="static/images/Figure_1.png" alt="Policy learning efficiency – results figure 1" style="width: 100%; height: auto;" loading="lazy"/>
           </figure>
+        </div>
+        <div class="column is-half">
           <figure>
             <img src="static/images/Figure_2.png" alt="Policy learning efficiency – results figure 2" style="width: 100%; height: auto;" loading="lazy"/>
-            <figcaption class="has-text-justified" style="margin-top: 0.5rem;">
-              Bar chart comparing three tasks: “Open Cabinet,” “Pick up Bottle,” and “Put the Apple into Bowl.” The Y-axis denotes the <strong>success rate ↑</strong> and the number of <strong>environment steps ↓</strong> required to collect 1000 successful trajectories in evaluation. Four methods are evaluated: (i) w/o subgoal, baseline RL without subtask decomposition; (ii) w/ subgoals, RL with tasks decomposed into short-horizon subgoals; (iii) w/ freeze-DOFs, RL with selective freezing of redundant degrees of freedom; and (iv) w/ motion planning (Ours), approaching subtasks using motion planning instead.
-            </figcaption>
           </figure>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <figcaption class="has-text-justified" style="margin-top: 0.5rem;">
+            Bar chart comparing three tasks: “Open Cabinet,” “Pick up Bottle,” and “Put the Apple into Bowl.” The Y-axis denotes the <strong>success rate ↑</strong> and the number of <strong>environment steps ↓</strong> required to collect 1000 successful trajectories in evaluation. Four methods are evaluated: (i) w/o subgoal, baseline RL without subtask decomposition; (ii) w/ subgoals, RL with tasks decomposed into short-horizon subgoals; (iii) w/ freeze-DOFs, RL with selective freezing of redundant degrees of freedom; and (iv) w/ motion planning (Ours), approaching subtasks using motion planning instead.
+          </figcaption>
         </div>
       </div>
     </div>
