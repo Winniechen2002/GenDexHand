@@ -164,8 +164,13 @@
     <h2 class="title is-3 has-text-centered">GenDexHand Overview</h2>
     <div class="container" style="max-width: 66%; margin: 0 auto;">
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Gendex_overview_01.jpg" alt="GenDexHand Overview" style="width: 100%; height: auto;" loading="lazy"/>
+        <!-- Your video here -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+          <video autoplay muted loop playsinline controls
+                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <source src="static/Gendex_overview.mp4" type="video/mp4">
+          </video>
+        </div>
         <p class="has-text-centered">
           Overview of the GenDexHand pipeline for task generation. The process consists of four stages: Environment Proposal, Environment Creation, MLLM Refinement, and Trajectory Generation. Embodied assets and object assets are first provided to the Generator to produce an environment proposal. The simulator then renders multi-view images of the proposed scene, which are refined using an MLLM. Finally, the refined environment and proposal are combined to generate the resulting dexterous hand trajectory.
         </p>
